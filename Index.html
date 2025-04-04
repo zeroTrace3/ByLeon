@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZeroTrack - تحميل الأدوات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header-space"></div>
+    
+    <!-- القائمة المنسدلة -->
+    <label for="menu-toggle" class="menu-btn">☰</label>
+    <input type="checkbox" id="menu-toggle" hidden>
+    
+    <div class="sidebar">
+        <label for="menu-toggle" class="close-btn">✖</label>
+        <a href="#roblox">روبلوكس</a>
+        <a href="#fortnite">فورت نايت</a>
+        <a href="#esign">ايساين</a>
+        <a href="#dns">DNS</a>
+    </div>
+
+    <!-- الأقسام -->
+    <main>
+        <div id="roblox" class="section">
+            <div class="server-banner">
+                <img src="https://i.postimg.cc/8PFpd5VJ/IMG-3131.jpg" alt="سيرفر الديسكورد" class="corner-img">
+            </div>
+            
+            <h1>مرحبًا بك في ZeroTrack</h1>
+            <p>أفضل موقع لتحميل الأدوات بسهولة!</p>
+
+            <div class="button-container">
+                <a href="itms-services://?action=download-manifest&url=https://codex-ios.com/Install.plist" class="btn btn-codex" onclick="return confirm('هل تريد التوجه إلى رابط التثبيت؟')">تثبيت Codex</a>
+                <a href="itms-services://?action=download-manifest&url=https://deltaios-executor.com/Install1.plist" class="btn btn-delta" onclick="return confirm('هل تريد التوجه إلى رابط التثبيت؟')">تثبيت Delta</a>
+            </div>
+
+            <a href="https://discord.gg/rayrQG8M" class="btn btn-discord">انضم إلى Discord</a>
+        </div>
+
+        <div id="fortnite" class="section" hidden>
+            <img src="https://i.postimg.cc/fLTZVWKb/IMG-3141.jpg" alt="فورت نايت" class="game-img">
+            <a href="itms-services://?action=download-manifest&url=https://fortnite-ios.com/Install.plist" class="btn btn-download" onclick="return confirm('هل تريد التوجه إلى رابط التثبيت؟')">تحميل</a>
+        </div>
+
+        <div id="esign" class="section" hidden>
+            <h1>قسم ايساين</h1>
+            <p>محتويات القسم قريباً...</p>
+        </div>
+
+        <div id="dns" class="section" hidden>
+            <h1>قسم DNS</h1>
+            <p>محتويات القسم قريباً...</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ZeroTrack</p>
+    </footer>
+</body>
+</html>p

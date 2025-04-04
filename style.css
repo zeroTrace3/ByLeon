@@ -1,0 +1,133 @@
+/* الأساسيات */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.header-space {
+    height: 70px;
+    background-color: #0a0a0a;
+    width: 100%;
+}
+
+/* القائمة المنسدلة (تعمل بـ CSS فقط) */
+#menu-toggle { display: none; }
+
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #0a0a0a;
+    padding-top: 80px;
+    transition: 0.3s;
+    z-index: 99;
+}
+
+#menu-toggle:checked ~ .sidebar {
+    right: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 25px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #222;
+}
+
+.sidebar a:hover {
+    background-color: #222;
+}
+
+/* الأقسام */
+.section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* الصور */
+.corner-img {
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.game-img {
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin: 30px auto;
+}
+
+/* الأزرار */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s;
+    min-width: 150px;
+}
+
+.btn-codex { background-color: #e74c3c; color: white; }
+.btn-delta { background-color: #7f8c8d; color: white; }
+.btn-discord { background-color: #7289da; color: white; width: 200px; margin: 20px auto; }
+.btn-download { background-color: #3498db; color: white; width: 200px; margin: 20px auto; }
+
+/* الفوتر */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 90%;
+    }
+}
